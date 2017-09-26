@@ -2644,7 +2644,7 @@
 4372,Bacsojin_Card,White Lady Card,6,20,,10,,,,,,,,769,,,,,{ bonus bHealPower,30; bonus bUseSPrate,15; },{},{}
 4373,Chung_E_Card,Green Maiden Card,6,20,,10,,,,,,,,4,,,,,{ .@r = getrefine(); bonus bLuk,.@r-5; bonus bCritical,.@r; },{},{}
 4374,Apocalips_H_Card,Vesper Card,6,20,,10,,,,,,,,769,,,,,{ bonus bDex,2; bonus2 bIgnoreMdefClassRate,Class_Boss,30; },{},{}
-4375,Orc_Baby_Card,Orc Baby Card,6,20,,10,,,,,,,,4,,,,,{ .@i = (getrefine()>=9?15:10); bonus2 bSubEle,Ele_Neutral,.@i; bonus bFlee,.@i; },{},{}
+4375,Orc_Baby_Card_Card,Orc Baby Card,6,20,,10,,,,,,,,4,,,,,{ .@i = (getrefine()>=9?15:10); bonus2 bSubEle,Ele_Neutral,.@i; bonus bFlee,.@i; },{},{}
 4376,Lady_Tanee_Card,Lady Tanee Card,6,20,,10,,,,,,,,64,,,,,{ bonus bMaxHPrate,-40; bonus bMaxSPrate,50; bonus2 bAddMonsterDropItem,513,200; bonus2 bAddItemHealRate,513,100; },{},{}
 4377,Green_Iguana_Card,Grove Card,6,20,,10,,,,,,,,136,,,,,{ bonus3 bAddMonsterDropItem,12063,RC_Formless,50; },{},{}
 4378,Acidus_Card,Gold Acidus Card,6,20,,10,,,,,,,,64,,,,,{ if(getrefine()<=4) { bonus bMaxHPrate,8; bonus bMaxSPrate,8; bonus bHPrecovRate,5; bonus bSPrecovRate,5; } else { bonus bMaxHPrate,4; bonus bMaxSPrate,4; } },{},{}
@@ -15832,8 +15832,21 @@
 //-31178
 //-31179
 //-31180
+31181,C_Necklace_Rosary,Costume Necklace Rosary,4,0,,0,,0,,0,0xFFFFFFFF,63,2,4096,,1,0,1471,{},{},{}
+31182,C_Side_Cap,Costume Side Cap,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,529,{},{},{}
+31183,C_Fallen_Angel_Blessing,Costume Blessing of Fallen Angel,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,1250,{},{},{}
+31184,C_Hawkeye,Costume Hawkeye,4,0,,0,,0,,0,0xFFFFFFFF,63,2,2048,,1,0,609,{},{},{}
+31185,C_Engineer_Cap,Costume Engineer Cap,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,608,{},{},{}
+31186,C_Black_Cat,Costume Black Cat,4,0,,0,,0,,0,0xFFFFFFFF,63,2,2048,,1,0,1582,{},{},{}
+31187,C_War_Princess_Ribbon,Costume War Princess Ribbon,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,1583,{},{},{}
+31188,C_Mono_Gothic_Bonnet,Costume Mono Gothic Bonnet,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,1584,{},{},{}
+31189,C_Cat_Ears_Cape_Red,Costume Red Cat Ears Cape,4,0,,0,,0,,0,0xFFFFFFFF,63,2,4096,,1,0,609,{},{},{}
+31190,C_Angel_Mini_Silk_Hat_B,Costume Black Angel Mini Silk Hat,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,1586,{},{},{}
+31191,C_Whikebain_Ears_Gold,Vibrant Cat Ears,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,1588,{},{},{}
+31192,C_Bluecat_Ears,Blue Cat Ears,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,1589,{},{},{}
 31193,C_Tare_Ahat,Costume Drooping Ahat,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,1590,{},{},{}
 31194,C_Spinning_Propeller,Costume Spinning Propeller,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,270,{},{},{}
+31195,C_Choco_Minihat,Costume Mini Chocolate Hat,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,1592,{},{},{}
 //-31196
 31197,C_Egg_Crispinette,Costume Egg Crispinette,4,0,,0,,0,,0,0xFFFFFFFF,63,2,1024,,1,0,1598,{},{},{}
 //-31198
