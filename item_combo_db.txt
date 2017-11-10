@@ -104,9 +104,9 @@
 1730:1752:19048,{ bonus bLongAtkRate,20; bonus2 bSubEle,Ele_Fire,-10; if (getequiprefinerycnt(EQI_HAND_R) >= 10) bonus bAspd,1; }
 1730:19019,{ bonus bLongAtkRate,45; }
 1731:1754,{ bonus bLongAtkRate,25; }
-1731:1754:19048,{ bonus bLongAtkRate,20; bonus2 bAddEff,Eff_Freeze,-1000; if (getequiprefinerycnt(EQI_HAND_R) >= 10) bonus bAspd,1; }
+1731:1754:19048,{ bonus bLongAtkRate,20; bonus3 bAddEff,Eff_Freeze,-1000,ATF_LONG; if (getequiprefinerycnt(EQI_HAND_R) >= 10) bonus bAspd,1; }
 1731:19019,{ bonus bLongAtkRate,45; }
-1732:1756,{ bonus bLongAtkRate,25; bonus2 bAddEff,Eff_Stone,1000; }
+1732:1756,{ bonus bLongAtkRate,25; bonus3 bAddEff,Eff_Stone,1000,ATF_LONG; }
 1732:1756:19048,{ bonus bLongAtkRate,20; bonus2 bAddEff,Eff_Stone,-1000; if (getequiprefinerycnt(EQI_HAND_R) >= 10) bonus bAspd,1; }
 1732:19019,{ bonus bLongAtkRate,45; }
 1733:1755,{ bonus bLongAtkRate,25; bonus3 bAutoSpell,"NJ_HUUJIN",5,(readparam(bInt)>39) ? 300 : 100; }
@@ -450,9 +450,11 @@
 5391:5766,{ bonus bMaxHP,100; .@r = getrefine(); if(.@r>=7) bonus bMaxHP,100; if(.@r>=9) bonus bMaxHP,200; }
 5401:5653,{ bonus bInt,1; bonus bMatkRate,2; }
 5403:18529,{ bonus3 bAutoSpell,"BS_GREED",1,50; }
+5421:18651,{ bonus bAspdRate,getequiprefinerycnt(EQI_HEAD_TOP)/2; }
 //5470:5653,{ bonus bDex,1; bonus bLongAtkRate,3; }
 5475:18656,{ bonus bBaseAtk,30; bonus bMatk,30; bonus2 bAddMonsterDropItem,529,400; bonus2 bAddMonsterDropItem,530,400; bonus2 bAddMonsterDropItem,538,400; bonus2 bAddMonsterDropItem,12192,400;}
-5498:5521,{ .@r = getequiprefinerycnt(EQI_HEAD_TOP); if(.@r>=7) bonus bCritAtkRate,10; if(.@r>=9) bonus bAspd,1; }
+5498:5113,{ bonus bCritical,10; .@r = getequiprefinerycnt(EQI_HEAD_TOP); if(.@r>=7) bonus bCritAtkRate,10; if(.@r>=9) bonus bAspd,1; }
+5498:5521,{ bonus bCritical,10; .@r = getequiprefinerycnt(EQI_HEAD_TOP); if(.@r>=7) bonus bCritAtkRate,10; if(.@r>=9) bonus bAspd,1; }
 5548:5766,{ .@r = getequiprefinerycnt(EQI_HEAD_TOP); bonus bBaseAtk,min(.@r,10); bonus bMatk,min(.@r,10); }
 5917:1525,{ bonus bLongAtkDef,10; }
 5920:18542,{ bonus bHealPower,2*getequiprefinerycnt(EQI_HEAD_TOP); }
@@ -499,10 +501,10 @@
 18137:1752:19048,{ bonus bLongAtkRate,20; bonus2 bSubEle,Ele_Fire,-10; if (getequiprefinerycnt(EQI_HAND_R) >= 10) bonus bAspd,1; }
 18137:19019,{ bonus bLongAtkRate,45; }
 18138:1754,{ bonus bLongAtkRate,25; }
-18138:1754:19048,{ bonus bLongAtkRate,20; bonus2 bAddEff,Eff_Freeze,-1000; if (getequiprefinerycnt(EQI_HAND_R) >= 10) bonus bAspd,1; }
+18138:1754:19048,{ bonus bLongAtkRate,20; bonus3 bAddEff,Eff_Freeze,-1000,ATF_LONG; if (getequiprefinerycnt(EQI_HAND_R) >= 10) bonus bAspd,1; }
 18138:19019,{ bonus bLongAtkRate,45; }
-18139:1756,{ bonus bLongAtkRate,25; bonus2 bAddEff,Eff_Stone,1000; }
-18139:1756:19048,{ bonus bLongAtkRate,20; bonus2 bAddEff,Eff_Stone,-1000; if (getequiprefinerycnt(EQI_HAND_R) >= 10) bonus bAspd,1; }
+18139:1756,{ bonus bLongAtkRate,25; bonus3 bAddEff,Eff_Stone,1000,ATF_LONG; }
+18139:1756:19048,{ bonus bLongAtkRate,20; bonus3 bAddEff,Eff_Stone,-1000,ATF_LONG; if (getequiprefinerycnt(EQI_HAND_R) >= 10) bonus bAspd,1; }
 18139:19019,{ bonus bLongAtkRate,45; }
 18140:1755,{ bonus bLongAtkRate,25; bonus3 bAutoSpell,"NJ_HUUJIN",5,(readparam(bInt)>39) ? 300 : 100; }
 18140:1755:19048,{ bonus bLongAtkRate,20; bonus3 bAutoSpell,"NJ_HUUJIN",5,(readparam(bInt)>39) ? -300 : -100;; if (getequiprefinerycnt(EQI_HAND_R) >= 10) bonus bAspd,1; }
