@@ -11936,7 +11936,7 @@
 //-19292
 //-19293
 //-19294
-//-19296
+19296,Chic_Feather_Hat,Chic Hat With Feather,4,0,,0,,0,,1,0xFFFFFFFF,63,2,256,,1,1,1381,{ .@r = getrefine(); bonus bBaseAtk, 0+(15*(.@r/2)); if (.@r > 6) { bonus bLongAtkRate, 7; } if (.@r > 8) { bonus bAspd,1; bonus bWeaponAtkRate, 5; } if (.@r > 10) { bonus bLongAtkRate, 5; } if (.@r > 11 && .@r > 12 && .@r > 13 && .@r > 14 && .@r > 15) { bonus bFixedCastrate, -01; } },{},{}
 //-19299
 //-19300
 //-19302

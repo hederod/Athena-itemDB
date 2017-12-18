@@ -729,3 +729,6 @@
 28907:2998,{ bonus bSpeedRate,25; }
 28908:2998,{ bonus bDelayrate,-10; }
 28909:2998,{ bonus bUseSPrate,-10; bonus bMaxSPrate,10; }
+2525:19296,{ .@r = getequiprefinerycnt(EQI_GARMENT); bonus2 bSkillAtk,"SC_TRIANGLESHOT",0+(15*(.@r/2));}
+2544:19296,{ .@r = getequiprefinerycnt(EQI_GARMENT); bonus2 bSkillAtk,"WM_SEVERE_RAINSTORM",0+(7*(.@r/2)); }
+2554:19296,{ .@r = getequiprefinerycnt(EQI_GARMENT); bonus2 bSkillAtk,"SRA_ARROWSTORM",0+(12*(.@r/2)); }
